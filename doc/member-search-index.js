@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.user.dao","c":"TimeLogDAO","l":"addTimeLog(TimeLog)","u":"addTimeLog(com.user.model.TimeLog)"},{"p":"com.user.dao","c":"TimeLogDAO","l":"getTimeLogsByUserId(int)"},{"p":"com.user.dao","c":"TimeLogDAO","l":"TimeLogDAO()","u":"%3Cinit%3E()"}];updateSearchResults();

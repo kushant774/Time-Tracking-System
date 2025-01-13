@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container my-4">
+        <h1>User Dashboard</h1>
+        
+        <!-- Time Logging Section -->
+        <h2>Log Work Hours</h2>
+        <form id="timeLogForm">
+            <div class="mb-3">
+                <label for="startTime" class="form-label">Start Time</label>
+                <input type="time" id="startTime" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="endTime" class="form-label">End Time</label>
+                <input type="time" id="endTime" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="taskDescription" class="form-label">Task Description</label>
+                <textarea id="taskDescription" class="form-control"></textarea>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+
+        <!-- View Time Logs Section -->
+        <h2>View Time Logs</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Task</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic Rows -->
+            </tbody>
+        </table>
+
+        <!-- Generate Reports Section -->
+        <h2>Generate Reports</h2>
+        <form>
+            <div class="mb-3">
+                <label for="reportRange" class="form-label">Date Range</label>
+                <input type="text" id="reportRange" class="form-control" placeholder="YYYY-MM-DD to YYYY-MM-DD">
+            </div>
+            <button class="btn btn-success">Generate Report</button>
+        </form>
+    </div>
+</body>
+</html>
